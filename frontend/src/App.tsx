@@ -3,7 +3,7 @@ import { HeroSection } from "@/components/HeroPage";
 import { About } from "@/components/About/About";
 import { TeamPage } from "@/components/Team/TeamPage";
 import { CenterText } from "./components/CenterText";
-import { ProjectImage } from "@/components/ProjectImage/ProjectImage";
+import { CurrProject } from "@/components/CurrProject/CurrProject";
 import { TrioCard } from "@/components/Work/TrioCard";
 import { Footer } from "@/components/Footer/Footer";
 import "./App.css";
@@ -17,7 +17,7 @@ function App() {
       <TeamPage />
       <TrioCard />
       <CenterText />
-      <ProjectImage />
+      <CurrProject />
       <Footer />
     </>
   );

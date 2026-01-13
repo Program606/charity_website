@@ -3,6 +3,7 @@ import {HeroSection} from "@/components/HeroPage";
 import { CenterText } from "./components/CenterText";
 // import {Button} from "@/components/ui/button";
 import { ProjectImage } from "@/components/ProjectImage/ProjectImage";
+import { TrioCard } from "@/components/Work/TrioCard";
 import "./App.css";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <HeroSection />
       <CenterText />
       <ProjectImage />
+      <TrioCard />
 
     </>
   );

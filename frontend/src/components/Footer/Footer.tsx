@@ -1,19 +1,24 @@
-// import { Camera } from 'lucide-react';
-import { FooterSocials } from '@/components/Footer/FooterItem';
+import {
+  FooterSocials,
+  FooterContact,
+  FooterSubscribe,
+} from "@/components/Footer/FooterItem";
+
 export function Footer() {
   return (
-    <section className="flex-1 flex flex-row justify-center items-center gap-4 m-6 p-6">
+    <footer className="bg-slate-900 text-slate-100">
+      <section className="mx-auto flex max-w-6xl flex-col gap-10 px-6 py-10 md:flex-row md:items-start md:justify-between">
         <FooterSocials />
-      <div className="bg-yellow-300 flex flex-col gap-4">
-        <h2>CONTACT US</h2>
-        <p>email@gmail.com</p>
-        <p>+1234567890</p>
+        <FooterContact />
+        <FooterSubscribe />
+      </section>
+
+      <div className="border-t border-slate-800">
+        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-6 py-4 text-xs text-slate-500 md:flex-row">
+          <p>© {new Date().getFullYear()} Readers for Uni. All rights reserved.</p>
+          <p>University-led literacy club supporting young readers.</p>
+        </div>
       </div>
-      <div className="flex flex-col items-center gap-4">
-        <h2>Subscribe</h2>
-        <p>Enter your email to get notifications</p>
-      </div>
-      <div className=""></div>
-    </section>
+    </footer>
   );
 }

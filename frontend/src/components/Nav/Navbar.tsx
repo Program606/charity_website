@@ -10,11 +10,11 @@ import { NavBarItem, NavBarButton } from "@/components/Nav/NavBarItem";
 const logoSrc = "/logo.avif";
 export function Navbar() {
   const Links = [
-    { name: "LEARN", href: "#" },
-    { name: "ABOUT", href: "#" },
-    { name: "WORKS", href: "#" },
+    { name: "WHAT WE DO", href: "#" },
     { name: "GET INVOLVED", href: "#" },
-    { name: "GET IN TOUCH", href: "#" },
+    { name: "ABOUT", href: "#" },
+    { name: "COMMUNITY WORKS", href: "#" },
+    { name: "CONTACT US", href: "#" },
     { name: "DONATE", href: "#" },
   ];
 

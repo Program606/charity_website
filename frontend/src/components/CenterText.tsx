@@ -3,7 +3,7 @@ export function CenterText() {
     <>
       <section className="w-full h-[30vh] flex items-center justify-center  mb-10">
         <div className="w-full max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">What We Do</h2>
+          <h2 className="text-3xl font-bold mb-8 pt-6 text-center">What We Do</h2>
           <p className="text-start">
             A university-led literacy club empowers children in the community by
             providing free reading support, tutoring sessions, and access to

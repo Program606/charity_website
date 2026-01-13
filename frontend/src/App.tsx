@@ -4,6 +4,7 @@ import { CenterText } from "./components/CenterText";
 // import {Button} from "@/components/ui/button";
 import { ProjectImage } from "@/components/ProjectImage/ProjectImage";
 import { TrioCard } from "@/components/Work/TrioCard";
+import { Footer } from "@/components/Footer/Footer";
 import "./App.css";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <CenterText />
       <ProjectImage />
       <TrioCard />
+      <Footer />
 
     </>
   );

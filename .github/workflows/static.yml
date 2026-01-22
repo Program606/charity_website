@@ -17,6 +17,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend   # 👈 ALL "run:" commands execute in /frontend
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -26,6 +29,7 @@ jobs:
         with:
           node-version: 20
           cache: npm
+          cache-dependency-path: frontend/package-lock.json  # 👈 important
 
       - name: Install
         run: npm ci
@@ -33,14 +37,13 @@ jobs:
       - name: Build
         run: npm run build
 
-      # Prevent GitHub Pages from running Jekyll processing
       - name: Disable Jekyll
         run: touch dist/.nojekyll
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: frontend/dist   # 👈 upload the built output
 
   deploy:
     needs: build
